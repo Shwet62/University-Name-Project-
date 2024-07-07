@@ -24,6 +24,7 @@ function Show(collegeArray){
 async function getCollege(country){
    try{
     let res=await axios.get(url+country);
+    console.log(res.data);
     return res.data;
    }
    catch(err){
